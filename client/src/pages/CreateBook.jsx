@@ -15,7 +15,7 @@ const CreateBook = () => {
     e.preventDefault()
     try {
       setLodaing(true)
-      const res = await axios.post('http://localhost:5000/api/v1/create', {
+      const res = await axios.post('https://mern-books-store-api.vercel.app/api/v1/create', {
         title,
         author,
         publishyear,
