@@ -15,7 +15,7 @@ const Home = () => {
     const fetchBooks = async () => {
       setLoading(true)
       try {
-        const res = await axios.get('http://localhost:5000/api/v1/books')
+        const res = await axios.get('https://mern-books-store-api.vercel.app/api/v1/books')
 
         setBooks(res.data)
         setLoading(false)
