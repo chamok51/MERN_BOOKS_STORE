@@ -17,6 +17,9 @@ const port = 5000
 
 app.use(errorHandler)
 
+app.get('/', (req,res)=>{
+  res.send("Hello")
+})
 app.use('/api/v1', bookRoute)
 
 app.listen(port, () => {
