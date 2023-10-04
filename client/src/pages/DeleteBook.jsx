@@ -8,7 +8,7 @@ const DeleteBook = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/v1/delete/${id}`)
+      await axios.delete(`https://mern-books-store-api.vercel.app/api/v1/delete/${id}`)
       navigate('/')
     } catch (error) {
       console.log(error)
